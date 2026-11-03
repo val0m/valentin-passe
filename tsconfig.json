@@ -17,7 +17,8 @@
     "isolatedModules": true,
     "jsx": "react-jsx",
     "incremental": true,
-    "allowJs": true
+    "allowJs": true,
+    "rootDir": "."
   },
   "include": [
     "next-env.d.ts",
