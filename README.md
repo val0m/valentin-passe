@@ -87,6 +87,8 @@ styles/
 
 ## Development
 
+Requires Node.js 22 or later (`engines` in `package.json`). CI runs the version pinned in `.nvmrc`.
+
 Install dependencies:
 
 ```bash
@@ -118,6 +120,7 @@ npm run test
 - Section anchors are shared across locales to keep navigation and language switching predictable.
 - Styling relies on CSS variables in `styles/globals.css` and section-level Sass modules.
 - Typography is loaded through `next/font/google` with Space Grotesk for body text and Archivo for display text.
+- TypeScript is pinned with `~6.0.x` rather than `^`: `typescript-eslint` (via `eslint-config-next`) only supports `<6.1.0` and `ts-jest` `<7`. Widen the range once both peers accept newer versions.
 
 ## Documentation
 
