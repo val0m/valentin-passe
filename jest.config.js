@@ -16,6 +16,9 @@ module.exports = {
         tsconfig: {
           jsx: "react-jsx",
           esModuleInterop: true,
+          // TypeScript 6 requires an explicit rootDir whenever it emits (TS5011);
+          // ts-jest emits, unlike the noEmit Next.js tsconfig.json.
+          rootDir: __dirname,
         },
       },
     ],
